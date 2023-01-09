@@ -40,6 +40,11 @@ section{
   padding-top: 10vh;
 }
 
+.barra{
+  background-color: brown;
+  border: 2px solid brown;
+}
+
 /* Clases: 
     * En esta sección van las clases solas
     * Si van con algún elemento de sección irán con la sección correspondiente
@@ -57,17 +62,19 @@ section{
   border: 2px solid var(--colors3-1);
 }
 
+.contenedor{
+  width: 90vw;
+  height: 80%;
+  text-align: justify;
+  justify-content: center;
+}
 /* Presentación:
     * En esta sección se realiza el diseño del nombre cargo y foto
     * La sección de presentación
 */
 
-#pre-contenedor{
-  width: 90vw;
-  height: 80%;
+.pre{
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 20vw;
 }
 
@@ -78,7 +85,7 @@ section{
 
 #foto{
   border-radius: 20% 10%;
-  height: 70vh;
+  height: 60vh;
 }
 
 .desc{
@@ -102,9 +109,34 @@ section{
     * La explicación de qué he hecho
 */
 
-#ex-contenedor{
-  width: 90vw;
-  height: 80%;
+.ex{
+  
+}
+
+.titulo{
+  font-size: 6vh;
+}
+
+#exp-info{
+  padding: 10px;
+}
+
+.titulo-exp{
+  font-size: 5vh;
+}
+
+.enfasis{
+  font-weight: bold;
+  content: "+";
+}
+
+.enfasis-2{
+  font-weight: bold;
+  font-style:initial;
+  
+}
+.info-exp{
+  font-size: 3vh;
 }
 
 /* Ajustes a menor pantalla*/
@@ -112,7 +144,7 @@ section{
   section{
     height: 100%;
     width: 100%;
-    padding-left: 0;
+    padding-left: 5%;
     padding-top: 0;
   }
 
@@ -122,18 +154,26 @@ section{
     align-items: center;
   }
 
-  #pre-contenedor{
+  .pre{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     gap: 0vw;
   }
   
   #foto{
     border-radius: 20% 10%;
-    width: 80vw;
+    width: 60vw;
     height: auto;
+  }
+
+  #nombre{
+    font-size: 5vh;
+  }
+
+  #descrip{
+    font-size: 4vh;
   }
 }
