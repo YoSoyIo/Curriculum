@@ -68,6 +68,37 @@ section{
   text-align: justify;
   justify-content: center;
 }
+
+/* Botón para imprimir el cv en pdf
+  En esta sección se modela elaspecto del boton para mandar a imprimir
+*/
+
+#desc-btn{
+  display: none;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+
+.imprimir{
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  border-radius: 50%;
+  border: 2px solid rgb(63, 1, 1);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: rgba(218, 86, 86, 0.5);
+}
+
+.imprimir:active{
+  background-color: rgba(111, 0, 0, 0.696);
+}
+
 /* Presentación:
     * En esta sección se realiza el diseño del nombre cargo y foto
     * La sección de presentación
